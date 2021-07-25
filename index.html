@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Record Management</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="https://github.com/esrabello/gama-academy-record-management" target="_blank" title="GitHub Érico"><img id="header-logo" src="assets/images/icons/github-icon-black.png"/></a>
+            <p id="header-company-name">Desafio #2 | Gama Academy</p>
+        </div>
+    </header>
+
+    <section id="section-1">
+        <div class="banner-container">
+            <h1 id="featured-text">BLACK FRIDAY</h1>
+            <h2>Mega descontos no bundle, accessories e games da família PlayStation®5</h2>
+            <img src="assets/images/featured-ps5-family-bundle-montagem.png"/>
+        </div>
+    </section>
+
+    <section id="section-2">
+        <div class="client-registration-container">
+            <fieldset>
+                <legend id="legend-fieldset-1">Cadastre-se para comprar com <span id="featured-text">descontos de até 45%</span> em tudo da PlayStation®</legend>
+                <form id="client-registration-form">
+                    <input
+                        type="text"
+                        name="name"
+                        id="client-record-name"
+                        class="client-input-field"
+                        placeholder="Nome Completo"
+                        required/>                
+                    <input
+                        type="email"
+                        name="email"
+                        id="client-record-email"
+                        class="client-input-field"
+                        placeholder="E-mail"
+                        required/>
+                    <input
+                        type="tel"
+                        name="phone"
+                        id="client-record-phone"
+                        class="client-input-field"
+                        placeholder="Celular (xx) 9xxxx-xxxx"/>
+                    <fieldset id="fieldset-2">
+                        <legend id="legend-fieldset-2">Endereço</legend>
+                        <input
+                            type="text"
+                            name="address-street"
+                            id="client-record-address-street"
+                            class="client-input-field"
+                            placeholder="Rua"
+                            required/>
+                        <input
+                            type="text"
+                            name="address-number"
+                            id="client-record-address-number"
+                            class="client-input-field"
+                            placeholder="Número"
+                            required/>
+                        <input
+                            type="text"
+                            name="address-complement"
+                            id="client-record-address-complement"
+                            class="client-input-field"
+                            placeholder="Complemento"/>
+                        <input
+                            type="text"
+                            name="address-city"
+                            id="client-record-address-city"
+                            class="client-input-field"
+                            placeholder="Cidade"
+                            required/>
+                        <input
+                            type="text"
+                            name="address-state"
+                            id="client-record-address-state"
+                            class="client-input-field"
+                            placeholder="Estado"
+                            required/>
+                        <input
+                            type="text"
+                            name="address-zip-code"
+                            id="client-record-address-zip-code"
+                            class="client-input-field"
+                            placeholder="CEP"
+                            required/>
+                    </fieldset>
+                    <button onclick="registerClient()" type="submit" id="client-submit-btn">Fazer meu cadastro</button>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+
+    <section id="section-3">
+        <div class="product-registration-container">
+            <fieldset>
+                <legend id="legend-fieldset-1">Quer desapegar? Compramos seus games e accessories usados</legend>
+                <form id="product-registration-form">
+                    <div class="form-section">
+                            <input
+                            type="text"
+                            name="name"
+                            id="product-record-name"
+                            class="product-input-field"
+                            placeholder="Item"
+                            required/>
+                        <input
+                            type="text"
+                            name="price"
+                            id="product-record-price"
+                            class="product-input-field"
+                            placeholder="Preço de venda (R$)"
+                            required/>
+                    </div>
+                        <textarea
+                            id="product-record-description"
+                            name="description"
+                            placeholder="Nos dê algumas informações sobre seu item"
+                            minlength="30"
+                            required></textarea>
+                        <button onclick="registerProduct()" type="submit" id="product-submit-btn">Cadastrar meu item</button>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p id="foot-container-dedicatory"><i>Uma homenagem aos meus irmãos loucos por videogame.</i></p>
+            <p id="foot-container-copyright">©2021. Todos os direitos reservados - Érico Rabello</p>
+        </div>
+    </footer>
+
+</body>
+<script type="text/javascript" src="assets/js/storeData.js"></script>
+</html>

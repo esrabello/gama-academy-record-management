@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'SST Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Bold'), url('../fonts/sst-cufonfonts-webfont/SSTBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SST Roman';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Roman'), url('../fonts/sst-cufonfonts-webfont/SSTRg.woff') format('woff');
+    }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEE;
+    font-family: "SST Roman", Arial, sans-serif;
+}
+
+h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+#featured-text {
+    color: #CD3D0F;
+    font-weight: bold;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 5%;
+    font-weight: 800;
+}
+
+#header-logo {
+    height: 60px;
+}
+
+.banner-container {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.banner-container h1 {
+    margin: 0;
+    font: 2.8rem 'SST Bold';
+}
+
+.banner-container h2 {
+    color:#1f1f1f;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.banner-container img {
+    width: auto;
+    height: 400px
+}
+
+.client-registration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: auto;
+    padding: 40px;
+    background: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#legend-fieldset-1 {
+    padding: 0 1vw;
+}
+
+#fieldset-2 {
+    margin-top: 4vh;
+}
+
+#legend-fieldset-2 {
+    padding: 0 1vw;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.client-input-field {
+    margin-top: 15px;
+    padding: 0 10px;
+    border: 0;
+    border-radius: 15px;;
+    width: 350px;
+    height: 35px;
+    font-size: 17px;
+    color: #1f1f1f;
+}
+
+#client-submit-btn {
+    margin-top: 15px;
+    padding: 0;
+    border: 0;
+    border-radius: 15px;;
+    height: calc(1.5rem + 4vh);
+    width: calc(120px + 15vw);
+    background: #CD3D0F;
+    color: #ffffff;
+    font-size: calc(0.7rem + 1vh);
+    letter-spacing: 0.4px;
+}
+
+#client-submit-btn:hover {
+    background: #274598;
+    cursor: pointer;
+}
+
+.product-registration-container {
+    width: auto;
+    padding: 40px;
+    background: rgb(211, 211, 211);
+    color: #1f1f1f;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#product-registration-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.product-input-field {
+    margin-top: 10px;
+    padding: 0 10px;
+    border: 0;
+    border-radius: 15px;;
+    width: 350px;
+    height: 35px;
+    font-size: 17px;
+    color: #000000;
+}
+
+.form-section {
+    margin-bottom: 1vw;
+}
+
+.product-registration-container textarea {
+    width: calc(200px + 20vw);
+    height: 20vh;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem;
+    resize: none;
+}
+
+#product-submit-btn {
+    margin-top: 15px;
+    padding: 0;
+    border: 0;
+    border-radius: 15px;;
+    height: calc(1.5rem + 4vh);
+    width: calc(120px + 15vw);
+    background: #274598;
+    color: #ffffff;
+    font-size: calc(0.7rem + 1vh);
+    letter-spacing: 0.4px;
+}
+
+#product-submit-btn:hover {
+    background: #CD3D0F;
+    cursor: pointer;
+}
+
+div.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    height: 10vh;
+    background-color: #1f1f1f;
+    font-size: 0.85em;
+    color: #ffffff;
+}
